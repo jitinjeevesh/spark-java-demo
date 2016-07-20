@@ -1,0 +1,83 @@
+buildscript {
+    ext {
+        springBootVersion = '1.2.4.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("io.spring.gradle:dependency-management-plugin:0.5.1.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+//apply plugin: 'eclipse-wtp'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+//apply plugin: 'io.spring.dependency-management'
+apply plugin: 'war'
+
+
+war {
+    baseName = 'spring-boot-template'
+    version = '0.0.1-SNAPSHOT'
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+ext {
+    scalaVersion = '2.10'
+    metricsVersion = '2.2.0'
+    springIntegrationVersion = '4.0.3.RELEASE'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://maven.ow2.org/maven2/"
+    }
+    maven { url "http://maven.ow2.org/maven2-snapshot" }
+}
+
+configurations {
+    providedRuntime
+    compile.exclude group: 'ch.qos.logback'
+}
+
+dependencies {
+    springBootVersion = '1.2.4.RELEASE'
+//    compile("org.springframework.boot:spring-boot-starter")
+//    compile("org.springframework.boot:spring-boot-starter-integration")
+    compile("com.sparkjava:spark-core:2.3")
+    compile("org.springframework.boot:spring-boot-starter-jetty")
+//    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile("org.codehaus.groovy:groovy")
+    compile('com.google.code.gson:gson:2.5')
+/*
+    compile("com.mangofactory:swagger-springmvc:1.0.2"){
+        exclude module: "slf4j-log4j12"
+    }
+*/
+
+//    compile("org.springframework.boot:spring-boot-starter-amqp")
+
+//    compile("org.springframework.boot:spring-boot-starter-jdbc:$springBootVersion")
+
+//    compile("com.hazelcast:hazelcast-client:3.5.2")
+
+//    runtime("mysql:mysql-connector-java")
+
+//    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+
+//    testCompile("org.springframework.boot:spring-boot-starter-test")
+}
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+springBoot {
+    mainClass = "com.livfame.Application"
+}

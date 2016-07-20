@@ -1,0 +1,60 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : sparkDemo : spring-boot-template-0.0.1-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/classes/artifacts/sparkDemo/exploded/spring-boot-template-0.0.1-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="sparkDemo/web/Web Gradle : spring-boot-template-0.0.1-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="sparkDemo" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: com.sparkjava:spark-core:2.3" />
+          <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-jetty:1.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy:2.3.11" />
+          <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.5" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.12" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-simple:1.7.12" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-server:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-webapp:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:websocket-server:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:websocket-servlet:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-jsp:9.2.10.v20150310" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:javax-websocket-server-impl:9.2.10.v20150310" />
+          <element id="library" level="project" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-http:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-io:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:websocket-api:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty.toolchain:jetty-schemas:3.1.M0" />
+          <element id="library" level="project" name="Gradle: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1" />
+          <element id="library" level="project" name="Gradle: org.glassfish.web:javax.servlet.jsp:2.3.2" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty.orbit:javax.servlet.jsp.jstl:1.2.0.v201105211821" />
+          <element id="library" level="project" name="Gradle: org.glassfish.web:javax.servlet.jsp.jstl:1.2.2" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty.orbit:org.eclipse.jdt.core:3.8.2.v20130121" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-annotations:9.2.10.v20150310" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:javax-websocket-client-impl:9.2.10.v20150310" />
+          <element id="library" level="project" name="Gradle: javax.websocket:javax.websocket-api:1.0" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-util:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-plus:9.2.10.v20150310" />
+          <element id="library" level="project" name="Gradle: javax.annotation:javax.annotation-api:1.2" />
+          <element id="library" level="project" name="Gradle: org.ow2.asm:asm:5.0.1" />
+          <element id="library" level="project" name="Gradle: org.ow2.asm:asm-commons:5.0.1" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-jndi:9.2.10.v20150310" />
+          <element id="library" level="project" name="Gradle: org.ow2.asm:asm-tree:5.0.1" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-xml:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-servlet:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-security:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.glassfish:javax.el:3.0.1-b08" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:websocket-common:9.3.2.v20150730" />
+          <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:websocket-client:9.3.2.v20150730" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/classes/artifacts/sparkDemo/exploded/spring-boot-template-0.0.1-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

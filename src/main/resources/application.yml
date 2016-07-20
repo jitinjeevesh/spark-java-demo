@@ -1,0 +1,47 @@
+spring:
+  data:
+      mongodb:
+            uri: mongodb://localhost/fame_ms_beam_dev
+  rabbitmq.virtual-host: fameplus_dev
+  rabbitmq.username: guest
+  rabbitmq.password: guest
+  rabbitmq.host: localhost
+
+server:
+  port: 8080
+
+spring.dbfame:
+  url: jdbc:mysql://localhost/fameLive_dev?useUnicode=true&CharSet=UTF-8&characterEncoding=UTF-8
+  username: root
+  password: igdefault
+  driverClassName: com.mysql.jdbc.Driver
+  maxActive: 10
+  max-idle: 1
+  min-idle: 0
+  test-while-idle:  true
+  test-on-borrow: true
+  validation-query: SELECT 1
+  time-between-eviction-runs-millis:  60000
+  min-evictable-idle-time-millis: 300000
+
+hazelcast:
+  serverUrl: localhost
+
+mongodb:
+  dbURL: localhost
+  port: 27017
+  dbURLSlave1:  localhost
+  dbPortSlave1: 27017
+  dbURLSlave2:  localhost
+  dbPortSlave2: 27017
+  db: fameLive_dev
+
+cloudinary:
+  baseUrl:  http://res.cloudinary.com/fameplus-dev/image/upload/
+
+environment:
+  name: dev
+  apiUrl: http://qa1-api.fameplus.com/api/v6
+
+logging.file: ${user.home}/logs/jetty-beam-ms.log
+
